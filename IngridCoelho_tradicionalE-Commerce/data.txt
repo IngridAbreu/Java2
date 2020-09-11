@@ -1,0 +1,33 @@
+insert into cliente(id_cliente,nome_cliente,rua,numero,complemento,bairro,cep,cidade,uf,telefone_cliente,nome_usuario,email_cliente,cpf_cliente,data_nascimento_cliente)
+values('1', 'Alice','rua dos alfeneiros','6','no armario sob a escada','bairro das corujas','56445-789','centro','rj','(24)6355-8977','Alice','alicealgodaodoce@gmail.com','785.484.133-12','18-05-2000');
+insert into cliente(id_cliente,nome_cliente,rua,numero,complemento,bairro,cep,cidade,uf,telefone_cliente,nome_usuario,email_cliente,cpf_cliente,data_nascimento_cliente)
+values('2', 'Garfield','rua lasanhas','6','o john mora comigo','nao sei','56971-789','centro','rj','(24)6355-8977','garfield','garfieldlasanha@gmail.com','785.555.133-12','18-05-2010');
+
+insert into funcionario(id_funcionario,nome_funcionario,cpf_funcionario)
+values('1','Ingrid','154.569.873-88');
+insert into(id_funcionario,nome_funcionario,cpf_funcionario)
+values('2','Chewbaca','333.569.873-88');
+
+insert into categoria(id_categoria,nome_categoria,descricao_categoria)
+values('2', 'Blusa' , 'Blusa');
+insert into categoria(id_categoria,nome_categoria,descricao_categoria)
+values('3', 'Vestido' , 'Vestido');
+insert into categoria(id_categoria,nome_categoria,descricao_categoria)
+values('4', 'Calca' , 'Calca');
+
+insert into produto(id_produto , nome_produto , descricao_produto , valor_unitario , data_fabricacao , id_categoria , id_funcionario)
+values('1' , 'Calca jeans skinny' , 'Calca Jeans skinny Azul', '100.0','19-05-2020','4','1');
+insert into produto(id_produto , nome_produto , descricao_produto , valor_unitario , data_fabricacao , id_categoria , id_funcionario)
+values('2' , 'Vestido' , 'Vestido longo floral', '70.0','20-05-2020','3','1');
+insert into produto(id_produto , nome_produto , descricao_produto , valor_unitario , data_fabricacao , id_categoria , id_funcionario)
+values('3' , 'Blusa Estampada' , 'Blusa azul Estampada', '70.0','20-05-2020','2','2');
+
+insert into pedido(id_pedido,data_pedido,id_cliente)
+values('1','22-05-2020','2');
+insert into pedido(id_pedido,data_pedido,id_cliente)
+values('2','21-05-2020','1');
+
+insert into pedido_produto(id_produto_pedido,quantidade,id_pedido,id_produto)
+values('1','2','1','2');
+insert into pedido_produto(id_produto_pedido,quantidade,id_pedido,id_produto)
+values('2','1','2','1')
